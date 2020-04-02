@@ -11,5 +11,5 @@ yarn start
 ```
 
 ## Build with 
-### [Parcel](https://redux.js.org/)
+### [Parcel](https://parceljs.org/)
 Blazing fast, zero configuration web application bundler
