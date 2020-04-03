@@ -1,10 +1,11 @@
+@import "../node_modules/normalize.css/normalize.css";
+
 html {
   font-family: "Lato", sans-serif;
   height: 100%;
 }
 
 body {
-  margin: 0;
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -20,6 +21,10 @@ h4 {
 }
 
 /* TOP NAVBAR CLASSES */
+.logo {
+  width: 8rem;
+}
+
 .navbar-container {
   display: flex;
   align-items: center;
@@ -78,4 +83,13 @@ a.footer-mails:hover {
   margin-top: 0.2rem;
   font-size: 0.9rem;
   font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-container {
+    flex-direction: column;
+  }
+  .navbar-links {
+    padding: 1.5rem 0rem 0.5rem;
+  }
 }
