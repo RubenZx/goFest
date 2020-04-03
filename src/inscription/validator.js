@@ -1,3 +1,9 @@
+const style = document.createElement("style");
+style.type = "text/css";
+style.innerHTML =
+  ".input-error { outline: none; border: 2px solid red !important; border-radius: 5px !important; margin-bottom: 0.1rem !important;}";
+document.getElementsByTagName("head")[0].appendChild(style);
+
 const testEmail = email => {
   let error = "";
   if (email === "") {
@@ -7,71 +13,84 @@ const testEmail = email => {
   ) {
     error = "Formato email incorrecto";
   }
-  return error;
+  return { "email-error": error };
 };
 
-const testStringLength = value => {
-  error = "";
+const testStringLength = (value, fieldName) => {
+  let error = "";
   if (value === "") {
     error = "Campo requerido";
   } else if (value.length < 4) {
     error = "Demasiado corto";
   }
-  return error;
+  return { [`${fieldName}-error`]: error };
 };
 
-const testDate = (startDate, endDate) => {
+const testDate = (start, end) => {
   const eventStart = "2020-06-25";
   const eventEnd = "2020-06-28";
 
   let error = "";
-
-  if (startDate === null || endDate === null) {
+  if (start === null || end === null) {
     error = "Campo requerido";
-  } else if (startDate < eventStart) {
+  } else if (start < eventStart) {
     error = "La fecha debe ser mayor o igual al día de inicio del evento";
-  } else if (endDate > eventEnd) {
+  } else if (end > eventEnd) {
     error = "La fecha debe ser menor o igual al día de finalización del evento";
-  } else if (startDate > endDate) {
+  } else if (start > end) {
     error = "La fecha de entrada ha de ser menor a la de salida";
   }
 
-  return error;
+  return { "start-error": error };
 };
 
 form.addEventListener("submit", event => {
   event.preventDefault();
-  let errors = {};
 
   const fields = {
     email: document.getElementById("email").value,
-    name: document.getElementById("name").value,
-    lastName: document.getElementById("lastname").value,
-    startDate: document.getElementById("start-date").value,
-    endDate: document.getElementById("end-date").value
+    firstname: document.getElementById("firstname").value,
+    lastname: document.getElementById("lastname").value,
+    start: document.getElementById("start").value,
+    end: document.getElementById("end").value
   };
 
+  let errors = [];
   Object.entries(fields).forEach(([key, value]) => {
     switch (key) {
       case "email":
-        errors.email = testEmail(value);
+        errors = [...errors, testEmail(value)];
         break;
-      case "name":
-        errors.name = testStringLength(value);
+      case "firstname":
+        errors = [...errors, testStringLength(value, key)];
         break;
-      case "lastName":
-        errors.lastName = testStringLength(value);
+      case "lastname":
+        errors = [...errors, testStringLength(value, key)];
         break;
-      case "startDate":
-        errors.startDate = testDate(value, fields.endDate);
+      case "start":
+        errors = [...errors, testDate(value, fields.end)];
         break;
       default:
         break;
     }
   });
 
-  console.log({
-    isValid: Object.values(errors).every(x => x === null || x === ""),
-    errors: errors
+  errors.forEach(element => {
+    const [[key, value]] = Object.entries(element);
+    const fieldId = key.replace("-error", "");
+    const docElement = document.getElementById(fieldId);
+
+    document.getElementById(key).innerHTML = value;
+    if (value) {
+      docElement.classList.add("input-error");
+      if (fieldId === "start") {
+        document.getElementById("end").classList.add("input-error");
+      }
+    } else {
+      docElement.classList.remove("input-error");
+      if (fieldId === "start") {
+        document.getElementById("end").classList.remove("input-error");
+      }
+    }
   });
 });

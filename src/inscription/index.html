@@ -44,38 +44,42 @@
       <div class="box">
         <h1>Inscripcion</h1>
         <form id="form" class="form-box" action="validacion-inscripcion.js">
-          <label for="name">Nombre</label>
-          <input class="input-box" type="text" id="name" />
+          <label for="firstname">Nombre</label>
+          <input class="input-box" type="text" id="firstname" />
+          <div class="error" id="firstname-error"></div>
 
           <label for="lastname">Apellidos</label>
           <input class="input-box" type="text" id="lastname" />
+          <div class="error" id="lastname-error"></div>
 
           <label for="email">Email</label>
           <input class="input-box" type="text" id="email" />
+          <div class="error" id="email-error"></div>
 
           <label for="tickets">Entradas</label>
           <select class="input-box" id="tickets">
-            <option value="normal">Entrada normal --- 30€</option>
-            <option value="vip">Entrada VIP --- 50€</option>
+            <option value="normal">Entrada normal --- 35€</option>
+            <option value="vip">Entrada VIP --- 70€</option>
           </select>
 
-          <label for="start-date">Fecha entrada:</label>
+          <label for="start">Fecha entrada:</label>
           <input
             class="input-box"
             type="date"
-            id="start-date"
+            id="start"
             name="trip-start"
             value="2020-06-25"
           />
 
-          <label for="end-date">Fecha salida:</label>
+          <label for="end">Fecha salida:</label>
           <input
             class="input-box"
             type="date"
-            id="end-date"
+            id="end"
             name="trip-start"
             value="2020-06-28"
           />
+          <div class="error" id="start-error"></div>
 
           <div class="button_cont" align="center">
             <button type="submit" class="button-inscription">
