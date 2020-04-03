@@ -1,9 +1,17 @@
 html {
   font-family: "Lato", sans-serif;
+  height: 100%;
 }
 
 body {
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.content {
+  flex: 1 0 auto;
 }
 
 h4 {
@@ -36,11 +44,8 @@ a.navbar-element:hover {
 }
 
 /* FOOTER CLASSES */
-.footer-container {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-
+.footer {
+  flex-shrink: 0;
   display: flex;
   align-items: center;
   flex-direction: column;
