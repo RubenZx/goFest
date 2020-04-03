@@ -29,7 +29,7 @@
     <div class="content">
       <nav class="navbar-container">
         <a href="../index.html">
-          <img src="../assets/images/logo.png" alt="logo" width="160px" />
+          <img class="logo" src="../assets/images/logo.png" alt="logo" />
         </a>
         <div class="navbar-links">
           <a class="navbar-element" href="../program/index.html">Programa</a>
@@ -58,6 +58,7 @@
             <option value="normal">Entrada normal --- 30€</option>
             <option value="vip">Entrada VIP --- 50€</option>
           </select>
+          <div class="error"></div>
 
           <label for="start-date">Fecha entrada:</label>
           <input
@@ -67,6 +68,7 @@
             name="trip-start"
             value="2020-06-25"
           />
+          <div class="error" id="start-error"></div>
 
           <label for="end-date">Fecha salida:</label>
           <input
@@ -76,6 +78,7 @@
             name="trip-start"
             value="2020-06-28"
           />
+          <div class="error"></div>
 
           <div class="button_cont" align="center">
             <button type="submit" class="button-inscription">
