@@ -137,3 +137,9 @@ input[type="date"]:focus {
   border: 3px solid #de6b48;
   border-radius: 5px;
 }
+
+.error {
+  color: red;
+  font-size: small;
+  margin-bottom: 1.5rem;
+}
