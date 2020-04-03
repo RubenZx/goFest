@@ -1,0 +1,24 @@
+.artist {
+    display: flex;
+    flex-direction: column;
+    margin: 2vw;
+}
+
+.artist-img{
+    height: 40vh;
+    background-image: url(../assets/artist/angelolsen.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.artist-img > h2 {
+    color: #fff !important;
+    font-size: 5em !important;
+    line-height: 36px;
+    text-align: left;
+    position: relative;
+    top: 20vh;
+    bottom: 50px;
+    margin-left: 4vw;
+}
