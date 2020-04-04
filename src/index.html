@@ -16,6 +16,7 @@
       content="juan carlos lucena monje, juancarlos.lucenamonje@alum.uca.es"
     />
     <link rel="stylesheet" href="./global-styles.css" />
+    <link rel="stylesheet" href="./styles.css" />
     <link rel="stylesheet" href="./styles/button.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Lato&display=swap"
@@ -40,59 +41,87 @@
       </nav>
 
       <div class="center-content">
-        <div>
-          <input
-            class="button"
-            type="button"
-            onclick="location.href='./inscription/index.html'"
-            value="Tickets"
-          />
-          <input
-            class="button"
-            type="button"
-            onclick="location.href='./location/index.html'"
-            value="Organiza tu viaje"
-          />
+        <div class="buttons-align">
+          <div>
+            <input
+              class="button"
+              type="button"
+              onclick="location.href='./inscription/index.html'"
+              value="Tickets"
+            />
+          </div>
+          <div>
+            <input
+              class="button"
+              type="button"
+              onclick="location.href='./location/index.html'"
+              value="Organiza tu viaje"
+            />
+          </div>
         </div>
 
-        <aside>
-          <div>
-            <h5>Festival MadCool cancelado, debido al coronavirus.</h5>
+        <aside class="news">
+          <div class="card">
+            <img
+              src="./assets/images/madcool.jpg"
+              alt="m&s"
+              style="width: 100%;"
+            />
+            <div class="container">
+              <h4>
+                Mad Cool Festival completa su cartel de 2020
+              </h4>
+              <small>27.02.2020 </small>
+            </div>
           </div>
-          <div>
-            <h5>Festival Guitar de Barcelona aplazado hasta nuevo aviso.</h5>
+
+          <div class="card">
+            <img src="./assets/images/bbk.jpg" alt="bbk" style="width: 100%;" />
+            <div class="container">
+              <h4>
+                Bilbao BBK Live cierra su cartel con más de 50 nuevos artistas
+              </h4>
+              <small>02.02.2020 </small>
+            </div>
           </div>
-          <div>
-            <h5>
-              Festival Inverfest empieza a devolver el precio de las entradas.
-            </h5>
+          <div class="card">
+            <img
+              src="./assets/images/camping.png"
+              alt="camping"
+              style="width: 100%;"
+            />
+            <div class="container">
+              <h4>
+                Camping en plena naturaleza con unas vistas impresionantes
+              </h4>
+              <small>02.02.2020 </small>
+            </div>
           </div>
         </aside>
       </div>
+      <footer class="footer">
+        <div class="footer-title">Contacto</div>
+        <div class="footer-mails">
+          <a
+            class="footer-mails"
+            href="mailto:ruben.monterodominguez@alum.uca.es"
+          >
+            <img
+              class="footer-img"
+              src="./assets/images/mail.svg"
+              alt="mail"
+            />Ruben Montero Dominguez</a
+          >
+          <a
+            class="footer-mails"
+            href="mailto:juancarlos.lucenamonje@alum.uca.es"
+          >
+            <img class="footer-img" src="./assets/images/mail.svg" alt="mail" />
+            Juan Carlos Lucena Monje</a
+          >
+        </div>
+        <div class="footer-copyright">&copy; 2020</div>
+      </footer>
     </div>
-
-    <footer class="footer">
-      <div class="footer-title">Contacto</div>
-      <div class="footer-mails">
-        <a
-          class="footer-mails"
-          href="mailto:ruben.monterodominguez@alum.uca.es"
-        >
-          <img
-            class="footer-img"
-            src="./assets/images/mail.svg"
-            alt="mail"
-          />Ruben Montero Dominguez</a
-        >
-        <a
-          class="footer-mails"
-          href="mailto:juancarlos.lucenamonje@alum.uca.es"
-        >
-          <img class="footer-img" src="./assets/images/mail.svg" alt="mail" />
-          Juan Carlos Lucena Monje</a
-        >
-      </div>
-      <div class="footer-copyright">&copy; 2020</div>
-    </footer>
   </body>
 </html>
