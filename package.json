@@ -5,11 +5,7 @@
   "author": "",
   "license": "MIT",
   "scripts": {
-    "start": "parcel src/index.html",
-    "build": "parcel build src/index.html"
-  },
-  "devDependencies": {
-    "parcel": "^2.0.0-alpha.3.2"
+    "start": "open src/index.html"
   },
   "dependencies": {
     "normalize.css": "^8.0.1"

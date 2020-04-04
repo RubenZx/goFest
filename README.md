@@ -10,9 +10,7 @@ yarn
 yarn start
 ```
 
-## Build with 
-### [Parcel](https://parceljs.org/)
-Blazing fast, zero configuration web application bundler
+## Build with
 
 ### [Normalize.css](https://necolas.github.io/normalize.css/)
 A modern alternative to CSS resets
