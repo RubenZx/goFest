@@ -1,0 +1,72 @@
+.box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 2rem;
+}
+
+.days-button {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2rem;
+}
+
+.days-button > button {
+    margin: 1rem;
+}
+
+@media screen and (max-width: 700px) {
+    .days-button {
+        flex-direction: column;
+    }
+}
+
+#localizacion {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+iframe {
+    width: 80%;
+    height: 50vh;
+}
+
+.icon{
+    text-align: center;
+    margin-top: 3rem;
+}
+  
+.icon > img {
+    width: 3em;
+}
+
+
+#transporte {
+    flex-direction: column;
+}
+
+#transporte > p {
+    margin: 0;
+}
+
+#alojamiento {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#relacionadas {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#relacionadas > a {
+    margin: 1rem;
+}
+
+#relacionadas > a > img {
+    margin: 1rem;
+}
