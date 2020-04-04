@@ -1,7 +1,7 @@
 /* BUTTON STYLES */
 .button {
   border: none;
-  background: #068d9d;
+  background: #48acf0;
   color: #ffffff !important;
   font-size: 0.8rem;
   font-weight: 100;
@@ -16,10 +16,8 @@
 @media screen and (min-width: 768px) {
   .button:hover {
     cursor: pointer;
-    color: #404040 !important;
     font-weight: 700 !important;
     letter-spacing: 4px;
-    background: #48acf0;
     box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
     transition: all 0.3s ease 0s;
   }

@@ -12,6 +12,8 @@ body {
 }
 
 .content {
+  display: flex;
+  flex-direction: column;
   flex: 1 0 auto;
 }
 
@@ -46,18 +48,19 @@ a.navbar-element {
 }
 
 a.navbar-element:hover {
-  color: #068d9d;
+  color: white;
 }
 
 .center-content {
+  flex: 1;
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin: 2rem;
 }
 
 /* FOOTER CLASSES */
 .footer {
-  flex-shrink: 0;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -83,7 +86,7 @@ a.footer-mails {
 }
 
 a.footer-mails:hover {
-  color: #068d9d;
+  color: white;
 }
 
 .footer-title {
@@ -104,5 +107,8 @@ a.footer-mails:hover {
   }
   .navbar-links {
     padding: 1.5rem 0rem 0.5rem;
+  }
+  .footer {
+    margin-top: 3rem;
   }
 }
