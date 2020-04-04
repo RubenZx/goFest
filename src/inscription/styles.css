@@ -22,33 +22,6 @@
   margin-bottom: 1rem;
 }
 
-/* FORM BUTTON */
-.button-inscription {
-  border: none;
-  background: #068d9d;
-  color: #ffffff !important;
-  font-size: 0.8rem;
-  font-weight: 100;
-  padding: 20px;
-  text-transform: uppercase;
-  border-radius: 6px;
-  display: inline-block;
-  transition: all 0.3s ease 0s;
-}
-
-@media screen and (min-width: 768px) {
-  .button-inscription:hover {
-    cursor: pointer;
-    color: #404040 !important;
-    font-weight: 700 !important;
-    letter-spacing: 4px;
-    background: none;
-    -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
-    -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
-    transition: all 0.3s ease 0s;
-  }
-}
-
 /* TEXT, DATE AND SELECT INPUT */
 input[type="text"],
 input[type="date"],
