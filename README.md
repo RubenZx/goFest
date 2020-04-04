@@ -12,5 +12,6 @@ yarn start
 
 ## Build with
 
-### [Normalize.css](https://necolas.github.io/normalize.css/)
-A modern alternative to CSS resets
+## Built With
+
+* [Normalize.css](https://necolas.github.io/normalize.css/) - A modern alternative to CSS resets
