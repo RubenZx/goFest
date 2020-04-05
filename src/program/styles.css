@@ -1,25 +1,105 @@
-.artist {
+.days-button {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 2rem;
+}
+
+.days-button > button {
+  margin: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+  .days-button {
+      flex-direction: column;
+  }
+}
+
+section {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  margin: 2vw;
+}
+
+article:last-child {
+  margin-top: 4rem;
+}
+
+.img-artist {
   width: 100%;
-}
-
-.artist-img {
-  height: 40vh;
-  background-image: url(../assets/artist/angelolsen.jpg);
-  background-position: 50% 50%;
-  background-size: cover;
+  height: 50vh;
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
 }
 
-.artist-img > h2 {
-  color: #fff !important;
-  font-size: 5em !important;
-  line-height: 36px;
+.angel{
+  background-image: url('../assets/artist/angelolsen.jpg');
+}
+
+.ashnikko {
+  background-image: url('../assets/artist/ashnikko.jpg');
+}
+
+.creeper{
+  background-image: url('../assets/artist/creeper.jpg');
+}
+
+.glass {
+  background-image: url('../assets/artist/glassanimals.jpg');
+}
+
+.hard {
+  background-image: url('../assets/artist/hardgz.jpg');
+}
+
+.hinds {
+  background-image: url('../assets/artist/hinds.jpg');
+}
+
+.artist > h1 {
+  display: flex;
+  margin-top: -8rem;
+  margin-left: 2rem;
+  font-size: 5rem;
+  color: #068d9d;
+}
+
+@media screen and (max-width: 600px) {
+  .artist > h1 {
+    font-size: 3rem;
+    margin-left: 1rem;
+    margin-top: -5rem;
+  }
+}
+
+.p-artist {
+  width: 80%;
+  margin-left: 10%;
+  text-indent: 1.5rem;
+}
+
+table{
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 2rem;
+  border: 1px solid #ddd;
+}
+
+th, td {
   text-align: left;
-  position: relative;
-  top: 20vh;
-  bottom: 50px;
-  margin-left: 4vw;
+  padding: 16px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+@media screen and (max-width: 600px) {
+  table {
+    display: block;
+    overflow-x: auto;
+  }
+
 }
