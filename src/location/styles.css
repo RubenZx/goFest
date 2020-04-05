@@ -63,10 +63,8 @@ iframe {
     text-align: center;
 }
 
-#relacionadas > a {
-    margin: 1rem;
-}
-
 #relacionadas > a > img {
+    width: 100%;
+    height: auto;
     margin: 1rem;
 }
