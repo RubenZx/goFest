@@ -8,12 +8,6 @@
   margin: 1rem;
 }
 
-@media screen and (max-width: 600px) {
-  .days-button {
-      flex-direction: column;
-  }
-}
-
 section {
   width: 100%;
   display: flex;
@@ -61,7 +55,7 @@ article:last-child {
   margin-top: -8rem;
   margin-left: 2rem;
   font-size: 5rem;
-  color: #068d9d;
+  color: white;
 }
 
 @media screen and (max-width: 600px) {
