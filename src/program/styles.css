@@ -50,7 +50,7 @@ article:last-child {
   background-image: url('../assets/artist/hinds.jpg');
 }
 
-.artist > h1 {
+.artist > h2 {
   display: flex;
   margin-top: -8rem;
   margin-left: 2rem;
