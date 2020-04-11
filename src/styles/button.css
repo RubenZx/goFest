@@ -1,4 +1,12 @@
 /* BUTTON STYLES */
+.center-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 2rem;
+}
+
 .button {
   border: none;
   background: #48acf0;
@@ -11,6 +19,16 @@
   display: inline-block;
   transition: all 0.3s ease 0s;
   outline: none;
+}
+
+.buttons-align {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  width: 100%;
+  display: flex;
+  flex: 2;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 @media screen and (min-width: 768px) {
