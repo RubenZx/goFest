@@ -26,28 +26,28 @@ article:last-child {
   background-position: 50% 50%;
 }
 
-.angel{
-  background-image: url('../assets/artist/angelolsen.jpg');
+.angel {
+  background-image: url("../assets/artist/angelolsen.jpg");
 }
 
 .ashnikko {
-  background-image: url('../assets/artist/ashnikko.jpg');
+  background-image: url("../assets/artist/ashnikko.jpg");
 }
 
-.creeper{
-  background-image: url('../assets/artist/creeper.jpg');
+.creeper {
+  background-image: url("../assets/artist/creeper.jpg");
 }
 
 .glass {
-  background-image: url('../assets/artist/glassanimals.jpg');
+  background-image: url("../assets/artist/glassanimals.jpg");
 }
 
 .hard {
-  background-image: url('../assets/artist/hardgz.jpg');
+  background-image: url("../assets/artist/hardgz.jpg");
 }
 
 .hinds {
-  background-image: url('../assets/artist/hinds.jpg');
+  background-image: url("../assets/artist/hinds.jpg");
 }
 
 .artist > h2 {
@@ -72,7 +72,7 @@ article:last-child {
   text-indent: 1.5rem;
 }
 
-table{
+table {
   border-collapse: collapse;
   border-spacing: 0;
   width: 80%;
@@ -81,7 +81,8 @@ table{
   border: 1px solid #ddd;
 }
 
-th, td {
+th,
+td {
   text-align: left;
   padding: 16px;
 }
@@ -95,5 +96,8 @@ tr:nth-child(even) {
     display: block;
     overflow-x: auto;
   }
+}
 
+.remove_margin {
+  margin: 0;
 }
