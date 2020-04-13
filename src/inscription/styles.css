@@ -116,3 +116,8 @@ input[type="date"]:focus {
   font-size: small;
   margin-bottom: 1.5rem;
 }
+
+.button_cont {
+  display: flex;
+  align-self: center;
+}
